@@ -21,6 +21,9 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/styles.css" rel="stylesheet">
+
+        <!-- SCRIPTS -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         
     </head>
     
@@ -149,20 +152,6 @@
                             Te ofrecemos tus datos y mucho más.
                         </p>
                         <div class="row">
-
-                            <div class="col">
-                                <div class="member-block">
-                                    <div class="member-block-image-wrap">
-                                        <video autoplay muted loop src="videos/match_analytics.mp4" class="member-block-image img-fluid" alt="" playsinline preload="true">
-                                    </div>
-    
-                                    <div class="member-block-info align-items-center">
-                                        <h4>Estadisticas precisas</h4>
-    
-                                        <p class="ms-auto">60+ <strong>highlights</strong> por partido.</p>
-                                    </div>
-                                </div>
-                            </div>
     
                             <div class="col">
                                 <div class="member-block">
@@ -174,6 +163,20 @@
                                         <h4>Mapa 2D</h4>
     
                                         <p class="ms-auto">Obtén una visión <strong>clara</strong> de tus jugadores en todo momento.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="member-block">
+                                    <div class="member-block-image-wrap">
+                                        <video autoplay muted loop src="videos/match_analytics.mp4" class="member-block-image img-fluid" alt="" playsinline preload="true">
+                                    </div>
+    
+                                    <div class="member-block-info align-items-center">
+                                        <h4>Estadisticas precisas</h4>
+    
+                                        <p class="ms-auto">60+ <strong>highlights</strong> por partido.</p>
                                     </div>
                                 </div>
                             </div>
@@ -394,7 +397,7 @@
                     <div class="row">
 
                         <div class="col-lg-5 col-12">
-                            <form action="#" method="post" class="custom-form contact-form" role="form">
+                            <form action="#" method="post" class="custom-form contact-form" role="form" enctype="text/plain" id="message-form">
                                 <h2 class="mb-4 pb-2">Contactenos</h2>
 
                                 <div class="row">
@@ -416,6 +419,14 @@
 
                                     <div class="col-lg-12 col-12">
                                         <div class="form-floating">
+                                            <input type="phone" class="form-control" id="phone-number" name="phone" placeholder="Ingrse su número de teléfono" required="true"></input>
+                                            
+                                            <label for="floatingTextarea">Teléfono</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-floating">
                                             <textarea class="form-control" id="message" name="message" placeholder="Escriba el mensaje aquí"></textarea>
                                             
                                             <label for="floatingTextarea">Mensaje</label>
@@ -425,6 +436,8 @@
                                     </div>
                                 </div>
                             </form>
+
+                            <script src="js/index.js"></script>
                         </div>
 
                         <div class="col-lg-6 col-12">
@@ -464,7 +477,7 @@
 
                         <div class="col">
                             <div class="section-bg-image-block">
-                                <h2 class="mb-lg-3">Newsletter</h2>
+                                <h2 class="mb-lg-3">Subscribete a nuestro newsletter</h2>
 
                                 <p>Subscribete a nuestro newsletter para enterarte de todas las novedades por venir.</p>
 
@@ -472,7 +485,7 @@
                                     <div class="input-group input-group-lg">
                                         <span class="input-group-text bi-envelope" id="basic-addon1"></span>
 
-                                        <input type="email" name="email" id="email_input" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="ejemplo@email.com" required="">
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="ejemplo@email.com" required="">
 
                                         <button type="submit" class="form-control">Subscribirse</button>
                                     </div>
@@ -520,18 +533,14 @@
                         <div class="col-lg-2 col-12 ms-auto">
                             <ul class="social-icon mt-lg-5 mt-3 mb-4">
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                    <a href="https://www.instagram.com/vmas.sports/" class="social-icon-link bi-instagram"></a>
                                 </li>
 
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                    <a href="https://api.whatsapp.com/send?phone=+598 95 163 951&text=Hola!" class="social-icon-link bi-whatsapp"></a>
                                 </li>
                             </ul>
-                            <p class="copyright-text">Diseño por: <a rel="nofollow" href="https://www.linkedin.com/in/juanmolinolo/" target="_blank">Juan Molinolo</a></p>
+                            <p class="copyright-text">Diseño y desarrollo por: <a rel="nofollow" href="https://www.linkedin.com/in/juanmolinolo/" target="_blank">Juan Molinolo</a></p>
                             
                         </div>
 
