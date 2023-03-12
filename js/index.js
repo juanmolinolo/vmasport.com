@@ -3,7 +3,7 @@ const submit = document.getElementById("message-form");
 
 submit.addEventListener('submit', (e)=> {
     e.preventDefault();
-    console.log("Clicked");
+    //console.log("Clicked");
 
     const email = document.getElementById("email").value;
     const name = document.getElementById("full-name").value;
