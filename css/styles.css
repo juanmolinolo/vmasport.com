@@ -1237,7 +1237,6 @@ strong {
 
   .hero-section {
     position: relative;
-    top: 82px;
     margin-bottom: 82px;
   }
 
@@ -1279,6 +1278,9 @@ strong {
   .navbar-brand {
     font-size: var(--p-font-size);
   }
+  p {
+    font-size: 20px;
+  }
 
   .navbar-brand-icon {
     width: 30px;
@@ -1313,5 +1315,6 @@ strong {
     font-size: 12px;
     padding: 4px 12px;
   }
+
 }
 
