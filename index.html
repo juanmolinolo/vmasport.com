@@ -63,25 +63,19 @@
                                 <a class="nav-link click-scroll" href="#section_3">Tienda</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Sobre nosotros</a>
-                            </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contacto</a>
+                                <a class="nav-link click-scroll" href="#section_4">Contacto</a>
                             </li>
 
-                            <!--
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conocé más</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="event-listing.html">Event Listing</a></li>
-
-                                    <li><a class="dropdown-item" href="event-detail.html">Event Detail</a></li>
+                                    <li><a class="dropdown-item" href="aboutus.html">Sobre nosotros</a></li>
                                 </ul>
                             </li>
-                        -->
+
                         </ul>
 
                     </div>
@@ -439,73 +433,6 @@
                 </div>
             </section>
 
-            <section class="about-section section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-lg-5 mb-4">Sobre nosotros</h2>
-                        </div>
-
-                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
-                            <h3 class="mb-3">Historia V+ Sports</h3>
-
-                            <p>Fundamos V+ Sports en el <strong>año 2000</strong> y desde entonces hemos ofrecido una gran selección de productos en alquiler. Nuestro negocio se ha convertido en sinónimo de calidad en Ciudad de México. Hacemos todo lo posible por garantizar una increíble variedad de artículos para todos los presupuestos. Queremos ofrecer el mejor servicio.</p>
-
-                            <p>Contáctenos y conozca más sobre nuestra tienda y los servicios de alquiler que tenemos para usted.</p>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4>[Nombre]</h4>
-
-                                    <p class="ms-auto">Founder</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-linkedin"></a>
-                                        </li>
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4>[Nombre]</h4>
-
-                                    <p class="ms-auto">Co-Founder</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
             <section class="info-section d-flex justify-content-center align-items-center" id="section_gracias_confianza"> 
 
                 <div class="container">
@@ -520,7 +447,7 @@
 
             </section>
 
-            <section class="contact-section section-padding" id="section_5">
+            <section class="contact-section section-padding" id="section_4">
                 <div class="container">
                     <div class="row">
 
@@ -687,6 +614,31 @@
         <script src="js/custom.js"></script>
         <script src="js/index.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <!-- FIREBASE SCRIPT-->
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyCFQgzkuGtHNsC_4A66PB4p9zZ9Dgb5D2E",
+              authDomain: "web-vmasports.firebaseapp.com",
+              projectId: "web-vmasports",
+              storageBucket: "web-vmasports.appspot.com",
+              messagingSenderId: "831711808456",
+              appId: "1:831711808456:web:6e746ecd298ac8baa50efd",
+              measurementId: "G-87YPEBQYGD"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
 
     </body>
 </html>
