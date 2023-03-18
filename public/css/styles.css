@@ -456,8 +456,8 @@ strong {
 }
 
 .navbar-brand-image {
-  width: 48px;
-  height: 48px;
+  width: 18px;
+  height: 24px;
 }
 
 .navbar-brand-text {
@@ -793,6 +793,14 @@ strong {
 
 
 /*---------------------------------------
+  TOP VIDEO SECTION              
+-----------------------------------------*/
+.top-video-section {
+  padding-top: 103px;
+}
+
+
+/*---------------------------------------
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
@@ -925,64 +933,6 @@ strong {
 .products-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-weight-medium);
-}
-
-
-/*---------------------------------------
-  MEMBERSHIP SECTION            
------------------------------------------*/
-.membership-section .container {
-  position: relative;
-  z-index: 2;
-}
-
-.table-responsive {
-  border-radius: var(--border-radius-medium);
-}
-
-.table-responsive tbody, 
-.table-responsive td, 
-.table-responsive tfoot, 
-.table-responsive th, 
-.table-responsive thead, 
-.table-responsive tr {
-  border: 0;
-}
-
-.table-responsive thead tr {
-  background-color: var(--secondary-color);
-  color: var(--white-color);
-}
-
-.table-responsive thead th {
-  padding: 22px 16px !important;
-}
-
-.table-responsive tbody tr:nth-child(even) {
-  background-color: var(--white-color);
-}
-
-.table>:not(caption)>*>* {
-  padding: 18px 16px;
-}
-
-.table-responsive .bi-check-circle-fill {
-  color: var(--primary-color);
-}
-
-.table-responsive .bi-x-circle-fill {
-  color: var(--custom-btn-bg-hover-color);
-}
-
-.membership-form {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-medium);
-  padding: 35px;
-}
-
-.membership-form .form-floating>textarea {
-  border-radius: var(--border-radius-medium);
-  height: 100px;
 }
 
 
