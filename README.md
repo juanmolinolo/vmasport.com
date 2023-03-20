@@ -7,5 +7,4 @@ Presentation page for V+ Sports, official uruguayan partner for [veo.co cams](ht
 ### TO-DO'S:
 - Add clubs section including all club href links and club logos.
 - Add sports section or way to clarify which sports they support/work on.
-- Change status message when sending a message through the contact form.
 - Link newsletter box to an email group in gmail.
