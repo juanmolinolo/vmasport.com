@@ -1,5 +1,5 @@
 ﻿# V+ Sports
-Presentation page for V+ Sports, official uruguayan partner for veo.co cams. Built using JS, HTML and CSS + Bootstrap. Deployed using Firebase.
+Presentation page for V+ Sports, official uruguayan partner for [veo.co cams](veo.co). Built using JS, HTML and CSS + Bootstrap. Deployed using Firebase.
 
 ### v1 finished page screenshot (20/03/20023)
 ![screenshot](https://github.com/juanmolinolo/vmas.com/tree/main/public/images/vmas_inicio.jpg?raw=true)
